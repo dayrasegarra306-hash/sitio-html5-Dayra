@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #00acc1;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  background-color: #0066cc;
+  margin: 0;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #00acc1;
+  border-radius: 5px;
+}
+
+main {
+  padding: 20px;
+  background: white;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.imagen-centro {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.section-flex {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.section-flex article {
+  flex: 1;
+  background-color: #00acc1;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+}
+
+input, textarea, button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  background: #222;
+  color: #ccc;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #444;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #444;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+footer {
+  background-color: #f0f0f0;
+  color: #ccc;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-flex {
+    flex-direction: column;
+  }
+
+  .imagen-centro {
+    width: 100%;
+    height: auto;
+  }
+}
+  .tabla-comparativa {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #e0f7fa;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+
+.tabla-comparativa th {
+  background-color: #00acc1;
+  color: #000;
+  padding: 12px;
+  text-align: left;
+}
+
+.tabla-comparativa td {
+  padding: 10px;
+  border-top: 1px solid #b2ebf2;
+}
+
+.tabla-comparativa tr:nth-child(even) {
+  background-color: #b2ebf2;
+}
+.linea-tiempo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px auto;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+.evento {
+  background-color: #e0f7fa;
+  border-left: 4px solid #00acc1;
+  padding: 15px 20px;
+  width: 300px;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.evento::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 20px;
+  width: 16px;
+  height: 16px;
+  background-color: #00acc1;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px #00acc1;
+}
+
+.fecha {
+  font-weight: bold;
+  color: #004d61;
+  margin-bottom: 5px;
+}
+
+.contenido h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.contenido p {
+  margin: 5px 0 0;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .linea-tiempo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .evento {
+    width: 90%;
+  }
+}

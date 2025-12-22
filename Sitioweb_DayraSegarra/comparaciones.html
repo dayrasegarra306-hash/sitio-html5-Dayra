@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparaciones HTML</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Comparaciones entre HTML Antiguo y HTML5</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="historia.html">Línea de Tiempo</a></li>
+            <li><a href="versiones.html">Versiones</a></li>
+            <li><a href="comparaciones.html">Comparaciones</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Tabla Comparativa</h2>
+
+        <table class="tabla-comparativa">
+            <tr>
+                <th>Etiqueta Obsoleta</th>
+                <th>Alternativa Moderna</th>
+                <th>Descripción</th>
+            </tr>
+
+            <tr>
+                <td>&lt;font&gt;</td>
+                <td>CSS</td>
+                <td>El estilo ya no va en HTML.</td>
+            </tr>
+
+            <tr>
+                <td>&lt;center&gt;</td>
+                <td>CSS (text-align)</td>
+                <td>Centrado manejado por estilos.</td>
+            </tr>
+
+            <tr>
+                <td>&lt;big&gt;, &lt;small&gt;</td>
+                <td>CSS (font-size)</td>
+                <td>Tamaños personalizados con CSS.</td>
+            </tr>
+
+            <tr>
+                <td>No existía semántica</td>
+                <td>&lt;header&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;article&gt;</td>
+                <td>HTML5 agrega estructura real.</td>
+            </tr>
+        </table>
+
+        <h2 class="tabla-comparativa">Ventajas de HTML5</h2>
+        <ul>
+            <li>Mejor estructura semántica.</li>
+            <li>Reproduce video y audio sin plugins.</li>
+            <li>APIs modernas como geolocalización, canvas y storage.</li>
+            <li>Mejor accesibilidad.</li>
+            <li>Formularios más completos.</li>
+        </ul>
+
+    </section>
+</main>
+
+</body>
+</html>
