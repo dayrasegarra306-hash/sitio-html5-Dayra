@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comparaciones HTML</title>
+  <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">HTML Evolución</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="historia.html">Línea de Tiempo</a></li>
+        <li class="nav-item"><a class="nav-link" href="versiones.html">Versiones</a></li>
+        <li class="nav-item"><a class="nav-link active" href="comparaciones.html">Comparaciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container my-5">
+  <h2 class="mb-4 text-center">Comparaciones entre HTML Antiguo y HTML5</h2>
+
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark">
+        <tr>
+          <th>Etiqueta Obsoleta</th>
+          <th>Alternativa Moderna</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>&lt;font&gt;</td>
+          <td>CSS</td>
+          <td>El estilo ya no va en HTML.</td>
+        </tr>
+        <tr>
+          <td>&lt;center&gt;</td>
+          <td>CSS (text-align)</td>
+          <td>Centrado manejado por estilos.</td>
+        </tr>
+        <tr>
+          <td>&lt;big&gt;, &lt;small&gt;</td>
+          <td>CSS (font-size)</td>
+          <td>Tamaños personalizados con CSS.</td>
+        </tr>
+        <tr>
+          <td>No existía semántica</td>
+          <td>&lt;header&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;article&gt;</td>
+          <td>HTML5 agrega estructura real.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="mt-5">Ventajas de HTML5</h2>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Mejor estructura semántica.</li>
+    <li class="list-group-item">Reproduce video y audio sin plugins.</li>
+    <li class="list-group-item">APIs modernas como geolocalización, canvas y storage.</li>
+    <li class="list-group-item">Mejor accesibilidad.</li>
+    <li class="list-group-item">Formularios más completos.</li>
+  </ul>
+</main>
+
+<footer class="bg-dark text-white text-center py-3">
+  <p class="mb-0">©️ 2026 Evolución del HTML</p>
+</footer>
+
+<script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
